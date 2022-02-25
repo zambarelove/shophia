@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="./assets/slick/slick-theme-css.css">
+
+    <link rel="stylesheet" href="./assets/js/Minimal-jQuery-Back-To-Top-Button-Plugin-dyScrollUpJS/css/dyscrollup.min.css">
+</head>
+<body>
+<!-- 1 header start here -->
+    <div class="container-fluid d-md-block d-none" id="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <a href="#" class="call"><i class="fas fa-phone-alt"></i> Call  +001 555 801</a>
+
+                    <ul class="list-unstyled d-flex sub-header" >
+                        <li class="me-3 stick-1"><a href="#">WELLCOME MSG </a></li>
+                        <li class="me-3 stick-2"><a href="#">MY ACCOUNT</a></li>
+                        <li class="me-3 stick-3"><a href="#">MY WISHLIST</a></li>
+                        <li class=""><a href="#">LOGIN</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container" id="main-menu">
+        <div class="row">
+			<div class="col-12 d-lg-block d-none">
+				<nav class="navbar navbar-expand-md d-flex justify-content-between align-items-center bg-white ">
+					<div class="pe-0 d-none d-lg-block" id="inpage-link">
+					<ul class="list-unstyled navbar-nav">
+						<li class="list-item"><a href="#home" class="nav-link ps-0">Home</a></li>
+						<li class="list-item"><a href="#home" class="nav-link">Gallery</a></li>
+						<li class="list-item"><a href="#home" class="nav-link">Categories</a></li>
+						<li class="list-item"><a href="#home" class="nav-link">Pages</a></li>
+					</ul>
+					</div>
+
+					<div id="logo">
+						<a href="./index.html" class="navbar-brand ms-5">Shophia</a>
+					</div>
+
+					<div class="social-link d-flex justify-content-between align-items-center">
+						<ul class="list-unstyled navbar-nav social-link me-5 ">
+							<li class="list-item"><a href="#home" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="list-item"><a href="#home" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+							<li class="list-item"><a href="#home" class="nav-link"><i class="fab fa-pinterest"></i></a></li>
+							<li class="list-item"><a href="#home" class="nav-link pe-0"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+
+						<form action="">
+							<select name="" id="" class="p-1">RUPIAH
+								<option value="doller">RUPIAH</option>
+								<option value="doller">$ Doller</option>
+							</select>
+						</form>
+					</div>
+				</nav>
+			</div>
+			<div class="container d-lg-none d-block">
+				<div class="d-flex justify-content-between">
+					<div class="logo">
+						<a href="./index.html" class="navbar-brand">Shophia</a>
+					</div>
+					<div id="myNav" class="overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+						
+						<div class="overlay-content">
+							<ul class="list-unstyled interal">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Categories</a></li>
+								<li><a href="#contact">Pages</a></li>
+							</ul>
+							<ul class="list-unstyled  upper-sub text-start" >
+								<li class=""><a href="#">LOGIN</a></li>
+								<li class="me-1"><a href="#">MY WISHLIST</a></li>
+								<li class="me-1"><a href="#">MY ACCOUNT</a></li>
+								<li class="me-1"><a href="#">WELLCOME MSG </a></li>
+								<li class=""><a href="#">Call +001 555 801</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<span style="font-size:22px;cursor:pointer" onclick="openNav()" class="open-nav d-lg-none d-md-block">&#9776;</span> 
+			</div>
+       	</div>
+    </div>
+<!-- 1 header end here -->
+   
+<!-- 2 hero slider start here -->
+    <div class="container-fluid" id="hero-slider">
+        <div class="row responsive-1">
+            <div class="col-12 slide-1 text-center">
+				<div id="slide-1-info">
+					<p>MID-SEASON</p>
+					<h4 class="">SALE</h4>
+					<p class="mb-2"><span class="up-to-before"><span class="up-to-after">UP TO</span></span></p>
+					<h5>50% OFF</h5>
+				</div>
+				<a href="#" class="shop-now">SHOP NOW</a>
+            </div>
+			<div class="col-12 slide-1 text-center">
+				<div id="slide-1-info">
+					<p>MID-SEASON</p>
+					<h4 class="">SALE</h4>
+					<span>UP TO</span>
+					<p>50% OFF</p>
+				</div>
+				<a href="#" class="shop-now">SHOP NOW</a>
+            </div>
+			<div class="col-12 slide-1 text-center">
+				<div id="slide-1-info">
+					<p>MID-SEASON</p>
+					<h4 class="">SALE</h4>
+					<span>UP TO</span>
+					<p>50% OFF</p>
+				</div>
+				<a href="#" class="shop-now">SHOP NOW</a>
+            </div>
+       	</div>
+    </div>
+<!-- 2 hero slider start here -->
+
+<!-- 3 feature section container start here -->
+	<div class="container section" id="feature-section">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-12">
+			    	<div id="free-shipping">
+				   <img src="./assets/images/support-bg/support-3.png" class="img-fluid">
+				   	<div class="shipping-info d-flex justify-content-around align-items-center">
+						<div>
+							<i class="fas fa-plane"></i>
+						</div>
+						<div>
+							<h3>FREE SHIPPING</h3>
+							<p>In Order Min $200</p>
+						</div>
+				   	</div>
+			    	</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 py-lg-0 py-md-0 py-3">
+			    <div id="return">
+				   	<img src="./assets/images/support-bg/support-2.png" class="img-fluid">
+				   	<div class="return-info d-flex justify-content-around align-items-center">
+						<div>
+							<i class="far fa-clock"></i>
+						</div>
+						<div>
+							<h3>30-DAYS RETURNS</h3>
+							<p>Money Back Guarantee</p>
+						</div>
+				   	</div>
+			    </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-12">
+			    <div id="support">
+				   <img src="./assets/images/support-bg/support-1.png" class="img-fluid">
+			    <div class="support-info d-flex justify-content-around align-items-center">
+				   <div>
+					  <i class="far fa-life-ring"></i>
+				   </div>
+				   <div>
+					  <h3>24/7 Support</h3>
+					  <p>LifeTime Support</p>
+				   </div>
+			    </div>
+			</div>
+			</div>
+		</div>
+	</div>
+<!-- 3 feature section container end here -->
+
+<!-- 4 gallery container start here -->
+    <!-- <div class="container section" id="gallery"> 
+        	<div class="row">
+               <hr class="border-before">
+				<h2 class="section-h2">HandPicked</h2>
+			<hr class="border-after">
+              	<div class="photo-gallery col-12">
+                    <div class="item-1">
+                        <div class="item-1-info">
+                            <a href="#" class="shop-now">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="item-2">
+						<div class="item-2-info">
+							<a href="#" class="shop-now">SHOP NOW</a>
+						</div>
+                    </div>
+                    <div class="item-3">
+						<div class="item-3-info">
+							<img src="./assets/images/featured/Shopia.png" alt="pluse-sign">
+							<a href="#" class="shop-now">SHOP NOW</a>
+						</div>
+                    </div>
+                    <div class="item-4">
+                        <div class="item-4-info">
+                            <img src="./assets/images/featured/Shopia.png" alt="pluse-sign">
+                            <a href="#" class="shop-now">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="item-5">
+                        <div class="item-5-info">
+                            <img src="./assets/images/featured/Shopia.png" alt="pluse-sign">
+                            <a href="#" class="shop-now">SHOP NOW</a>
+                        </div>
+                    </div>
+          	</div>
+        	</div>
+    </div>   -->
+<!-- 4 gallery container start here -->
+
+<!-- 5 summer collection container start here -->
+    <div class="container section" id="summenr-collection">
+		<div class="row">
+			<hr class="border-before">
+          		<h2 class="section-h2">Summer Collection</h2>
+			<hr class="border-after">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-lg-0 mb-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-1.png" class="img-fluid">  
+					<span class="yellow-offer">20<span>%</span></span>
+
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-hover.png" class="img-fluid">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-lg-0 mb-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-2.png" class="img-fluid">  
+				
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-unhover.png" class="img-fluid">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-lg-0 mb-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-3.png" class="img-fluid">  
+					
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-unhover.png" class="img-fluid" alt="add-cart-img">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-lg-0 mb-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-4.png" class="img-fluid">  
+					<span class="yellow-offer">40 <span>%</span></span>
+				
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-unhover.png" class="img-fluid" alt="add-cart-img">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-5.png" class="img-fluid">
+					<span class="yellow-offer">20 <span>%</span></span>
+				
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-hover.png" class="img-fluid">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-6.png" class="img-fluid">  
+					
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-unhover.png" class="img-fluid" alt="add-cart-img">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-7.png" class="img-fluid">  
+				
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-unhover.png" class="img-fluid" alt="add-cart-img">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-3">
+				<div class="summer-card">
+					<img src="./assets/images/featured-img/featured-8.png" class="img-fluid">  
+					<span class="yellow-offer">40 <span>%</span></span>
+					
+					<div class="add-cart">
+						<img src="./assets/images/featured-img/add-cart-unhover.png" class="img-fluid" alt="add-cart-img">
+						<a href="#" class="add-cart"><i class="fas fa-plus"></i> ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+    	</div>	
+    </div>
+<!-- 5 summer collection container start here -->
+
+<!-- 6 brand container start here -->
+	<div class="container section" id="brand">
+		<div class="row">
+			<hr class="border-before">
+				<h2 class="section-h2">Our Brand</h2>
+			<hr class="border-after">
+			<div class="col-lg-2 col-md-4 col-6">
+				<img src="./assets/images/brand-img/brand-1.png" alt="brand-img-1" class="img-fluid">
+			</div>
+			<div class="col-lg-2 col-md-4 col-6">
+				<img src="./assets/images/brand-img/brand-2.png" alt="brand-img-1" class="img-fluid">
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-3 mt-lg-0 mt-md-0">
+				<img src="./assets/images/brand-img/brand-3.png" alt="brand-img-1" class="img-fluid">
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-3 mt-lg-0 mt-md-0">
+				<img src="./assets/images/brand-img/brand-4.png" alt="brand-img-1" class="img-fluid">
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-3 mt-lg-0 mt-md-0">
+				<img src="./assets/images/brand-img/brand-5.png" alt="brand-img-1" class="img-fluid">
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mt-3 mt-lg-0 mt-md-0">
+				<img src="./assets/images/brand-img/brand-6.png" alt="brand-img-1" class="img-fluid">
+			</div>
+		</div>
+	</div>
+<!-- 6 brand container end here -->
+
+<!-- 7 testimonial container start here -->
+	<div class="container-fluid px-0 testi-fluid-contai">
+		<hr class="border-before">
+		<h2 class="section-h2 my-5">Customers Says</h2>
+		<hr class="border-after">
+		<div class="col-12" id="testimonial">
+			<div class="row mt-5">
+				<div class="col-lg-6 col-md-12 col-12 women">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+							<img src="./assets/images/testimonial-img/testimonial-women.png" class="img-fluid" alt="testimonial-img">
+						</div>
+						<div class="col-lg-6 col-md-6 col-12 align-self-end">
+							<p class="text-start">Lorem ipsum, dolor sit <br> amet consectetur adipisicing elit. <br> Harum, voluptatem. Cum, sit?</p>
+							<h3 class="text-start">Sandra Dewi</h3>
+							<span class="text-start">FASHIONSTYLISH</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-12 men">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12 align-self-end ">
+							<p class="text-end">Lorem ipsum, dolor sit <br> amet consectetur adipisicing elit. <br> Harum, voluptatem. Cum, sit?</p>
+							<h3 class="text-end">Shaheer Sheikh</h3>
+							<span  class="text-end d-block">DESIGNER</span>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<img src="./assets/images/testimonial-img//testimonial-man.png" class="img-fluid" alt="testimonial-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 7 testimonial container here -->
+
+<!-- 8 footer start here -->
+	<div class="container-fluid" id="footer">
+		<div class="container footer-wrpper">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="shop">
+						<h4>SHOPS</h4>
+						<ul class="list-unstyled">
+							<li><a href="">New In</a></li>
+							<li><a href="">Women</a></li>
+							<li><a href="">Men</a></li>
+							<li><a href="">Shoes</a></li>
+							<li><a href="">Bags & Accessories</a></li>
+							<li><a href="">Top Brands</a></li>
+							<li><a href="">Sale & Special Offers</a></li>
+							<li><a href="">Lookbook</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="information">
+						<h4>INFORMATION</h4>
+						<ul class="list-unstyled">
+							<li><a href="">About us</a></li>
+							<li><a href="">Customer Service</a></li>
+							<li><a href="">New Collection</a></li>
+							<li><a href="">Best Sellers</a></li>
+							<li><a href="">Manufacturers</a></li>
+							<li><a href="">Privacy policy</a></li>
+							<li><a href="">Terms & condition</a></li>
+							<li><a href="">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="custmors-service">
+						<h4>CUSTOMER SERVICE</h4>
+						<ul class="list-unstyled">
+							<li><a href="">Search Terms</a></li>
+							<li><a href="">Advanced Search</a></li>
+							<li><a href="">Orders and Returns</a></li>
+							<li><a href="">Contact Us</a></li>
+							<li><a href="">Rss</a></li>
+							<li><a href="">Help & FAQs</a></li>
+							<li><a href="">Consulatant</a></li>
+							<li><a href="">Store Locations</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 px-0 col-12 mb-lg-0 mb-md-0 mb-4">
+					<div class="stay-contected ">
+						<h4>STAY CONNECTED</h4>
+						<ul class="list-unstyled d-flex justify-content-start m-0 p-0">
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fas fa-rss"></i></a></li>
+						</ul>
+						<h6 class="text-white mt-lg-0 mt-md-0 mt-3">SUBSCRIBE <i>in</i> OUR NEWS LETTERS</h6>
+						<form action="" class="">
+							<input type="text" name="" placeholder="Enter Your Email Address">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<img src="./assets/images/footer-img/footer-border.png" alt="footer border img" class="img-fluid">
+			<div class="row">
+				<div class="col-12 copy-rights">
+					<p>&copy; 2015 Shopia Fashion Store Shopify. 
+						<br class=" d-lg-block d-md-block ">
+						All Rights Reserverd.Ecommerce Software by Shopify.
+						<br>
+						Designed MoccalLabs.com
+					</p>
+					<img src="./assets/images/footer-img/visa.png" alt="visa img" class="img-fluid">
+					<img src="./assets/images/footer-img/mastercard.png" alt="visa img" class="img-fluid">
+					<img src="./assets/images/footer-img/american-exp.png" alt="visa img" class="img-fluid">
+					<img src="./assets/images/footer-img/discover.png" alt="visa img" class="img-fluid">
+
+				</div>
+				<a href="#"  class="scrollUp"><i class="fas fa-angle-up"></i></a>
+			</div>
+		</div>
+		<div class="row black-row"></div>
+	</div>
+<!-- 8 footer end here -->
+
+
+
+
+
+
+
+
+<!-- all script tag start here -->
+    	<!-- boostrap script tag -->
+    		<script src="https://kit.fontawesome.com/f8e489510b.js"></script>
+        	<script src="./assets/boostrap/js/bootstrap.bundle.js"></script>
+    	<!-- boostrap script tag -->
+
+    	<!-- full screen menu script start here -->
+		<script>
+		function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+		}
+		
+		function closeNav() {
+		document.getElementById("myNav").style.width = "0%";
+		}
+		</script>
+    	<!-- full screnn menu script end here -->
+
+	<!-- scroll to top script start here -->
+		<script>
+			const scrollUp = document.querySelector('.scrollUp');
+			window.addEventListener('scroll', () =>{
+				if(window.pageYOffset > 100){
+					scrollUp.classList.add("active");
+				}
+				else{
+					scrollUp.classList.remove("active")
+				}
+			});
+		</script>
+	<!-- scroll to top script start here -->
+
+    <!-- slider script start here -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>	
+    	<script>
+			$('.responsive-1').slick({
+				dots: true,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay:true,
+				autoplaySpeed: 2500,
+				prevArrow:true,
+				nextArrow: true,
+				responsive: [
+				{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+				},
+				{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				}
+				},
+				{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				}
+				},
+				{
+				breakpoint: 320,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				}}]});
+		</script>
+
+    <!-- slider script end here -->
+<!-- all script tag end here -->
+</body>
+</html>

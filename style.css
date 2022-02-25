@@ -1,0 +1,1126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .5s;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+@font-face {
+    font-family: lato;
+    src: url('./assets/goggle-font/lato/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: krinkes;
+    src: url('./assets/goggle-font/krinkes/KrinkesDecorPERSONAL.ttf');
+}
+@font-face {
+    font-family: playfair;
+    src: url('./assets/goggle-font/playfair-font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+body{
+    background-image: url('./assets/Shopia.png');
+}
+/* header css start here */
+    /* sub header start here */
+    #sub-header{
+        background-color: #F2F2F2;
+    }
+    #sub-header span{
+        font-size: 14px;
+    }
+    .call{
+        color: black;
+        text-decoration: none;
+    }
+    .call:hover{
+        color: #F09D66;
+    }
+    .fa-phone-alt{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .stick-1::after,.stick-2::after,.stick-3::after{
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 10px;
+        background-color: black;
+        margin-left: 10px;
+    }
+    .sub-header li a{
+        font-size: 14px;
+        line-height: 18px;
+        color: black;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .sub-header li a:hover{
+        color: #F09D66;
+    }
+    /* sub header end here */
+    /* menu css strat here */
+    nav{
+        height: 70px;
+    }
+    .navbar-brand{
+        color: black;
+        font-size: 42px;
+        line-height: 66px;
+        font-family: krinkes;
+    }
+    .navbar-brand:hover{
+        color: #F09D66;
+    }
+    .navbar-nav a{
+        font-size: 20px;
+        font-family: playfair;
+        color: black;
+        font-weight: 800;
+    }
+    .navbar-nav a:hover{
+        color: #F09D66;
+    }
+    #inpage-link{
+        margin-top: -25px;
+    }
+    .social-link {
+        margin-right: 10px;
+    }
+    .social-link li a i{
+        font-size: 14px;
+        padding: 13px;
+        border-radius: 50%;
+        border: 1px solid #d9bf8f;
+        color: #d9bf8f;
+    }
+    .social-link li a i:hover{
+        background-color: black;
+    }
+    form select{
+        color: white;
+        background-color: black;
+    }
+    .open-nav{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+    /* menu css strat here */
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+/* header css end here */
+
+/* 2 slider container css start */
+    #hero-slider{
+        width: 100%;
+        overflow: hidden;
+    }
+    #hero-slider .responsive-1 .slick-track{
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 50px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '12';
+        text-align: center;
+        opacity: .25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    #hero-slider .slide-1{
+        width: 100%;
+        height: 100%;
+        background-image: url('./assets/images/hero-slider/slider-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 20% bottom;
+        position: relative;
+    }
+    #hero-slider .slide-1 #slide-1-info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        border: 10px double white;
+    }
+    #hero-slider .slide-1 #slide-1-info p{
+        font-size: 20px;
+        line-height: 12px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: Lato;
+        text-align: center;
+    }
+    #hero-slider .slide-1 #slide-1-info .up-to-before::before{
+        content: '';
+        width: 20px;
+        height: 1px;
+        background-color: white;
+        display: block;
+        margin-left: 15px;
+        margin-bottom: -2px;
+    }
+    #hero-slider .slide-1 #slide-1-info .up-to-before::after{
+        content: '';
+        width: 40px;
+        height: 1px;
+        background-color: white;
+        display: block;
+        margin-left: -5px;
+    }
+    #hero-slider .slide-1 #slide-1-info .up-to-after::before{
+        content: '';
+        width: 20px;
+        height: 1px;
+        background-color: white;
+        display: block;
+        margin-bottom: -5px;
+        margin-left: 100px;
+    }
+    #hero-slider .slide-1 #slide-1-info .up-to-after::after{
+        content: '';
+        width: 40px;
+        height: 1px;
+        background-color: white;
+        display: block;
+        margin-left: 100px;
+    }
+    #hero-slider .slide-1 #slide-1-info h4{
+        font-size: 48px;
+        line-height: 70px;
+        color: #000000;
+        font-weight: 700;
+        font-family: lato;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #hero-slider .slide-1 #slide-1-info h5{
+        font-size: 31px;
+        line-height: 32px;
+        color: #000000;
+        font-weight: 700;
+        font-family: Lato;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .slide-1 .shop-now{
+        color: white;
+        padding: 10px;
+        background-color: #F09D66;
+        position: absolute;
+        bottom: 25%;
+        left: 46%;
+        width: 105px;
+        height: 35px;
+        text-decoration: none;
+    }
+    .shop-now:hover{
+        color: white;
+        background-color: black;
+    }
+/* 2 slider container css end */
+
+/* 3 support css start here */
+    #free-shipping, #return, #support{
+        position: relative;
+    }
+    .shipping-info, .return-info, .support-info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        font-family: lato;
+    }
+    .shipping-info h3, .return-info h3 , .support-info h3{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .fa-plane{
+        font-size:32px;
+        margin-top: -20px;
+        margin-left: -85px;
+        transform: rotate(-25deg);
+    }
+    .fa-clock{
+        font-size: 38px;
+        margin-left: -45px;
+    }
+    .fa-life-ring{
+        font-size: 38px;
+        margin-left: -85px;
+    }
+/* 3 support css start here */
+
+/* 4 gallery container css start here */
+    #gallery{
+        min-width: 100%;
+        min-height: 700px;
+        position: relative;
+    }
+    .section{
+        padding-top: 70px;
+    }
+    .section-h2{
+        text-align: center;
+        font-family: playfair;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 30px;
+    }
+    #gallery .border-before{
+        width: 30%;
+        position: absolute;
+        top: 80px;
+        left: 10px;
+    }
+    #gallery .border-after{
+        width: 30%;
+        position: absolute;
+        top: 80px;
+        right: 10px;
+    }
+    .section-h2::before{
+        background-image: url('./assets/images/section-h2/before-after.png');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        content: '';
+        margin-right: 40px;
+    }
+    .section-h2::after{
+        background-image:  url('./assets/images/testimonial-img/testimonial-women.png'), url('./assets/images/section-h2/before-after.png');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        content: '';
+        margin-left: 40px;
+    }
+
+    .photo-gallery{
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 270px 300px 270px;
+        grid-gap: 10px;
+        grid-template-rows: 300px 300px ;
+    }
+    .photo-gallery .item-1, .item-3, .item-4, .item-5 {
+        width: 300px;
+        height: 300px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .photo-gallery .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        position: relative;
+        background-image: url('./assets/images/featured/banner-1.png');
+        background-size: cover;
+        width: 100%;
+        background-position: bottom center;
+    }
+    
+    .photo-gallery .item-1::after, .photo-gallery .item-3::after, .photo-gallery .item-4::after, .photo-gallery .item-5::after{
+        content: '';
+        width: 90%;
+        height: 90%;
+        border: 2px solid white;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .photo-gallery .item-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url('./assets/images/featured/banner-2.png');
+        background-size: cover;
+        background-repeat: round;
+        position: relative;
+        background-position: top center;
+        width: 100%;
+        height: 615px; 
+    }
+    .photo-gallery .item-3 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        position: relative;
+        background-image: url('./assets/images/featured/banner-3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .photo-gallery .item-4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        position: relative;
+        background-image: url('./assets/images/featured/banner-4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .photo-gallery .item-5 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        position: relative;
+        background-image: url('./assets/images/featured/banner-5.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .item-1-info, .item-3-info, .item-4-info, .item-5-info{
+        width: 0%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        display: none;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .item-1-info img, .item-3-info img, .item-4-info img, .item-5-info img{
+        width: 50px;
+        position: absolute;
+        bottom: 130px;
+        left: 100px;
+    }
+    .item-1-info a,.item-2-info a,.item-3-info a,.item-4-info a,.item-5-info a{
+        font-size: 15px;
+    }
+    .item-1-info .shop-now, .item-3-info .shop-now, .item-4-info .shop-now, .item-5-info .shop-now{
+        color: #ffffff;
+        background-color: #F09D66;
+        padding: 7px;
+        bottom: 20px;
+        left: 80px;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        bottom: 40px;
+        left: 80px;
+    }
+    .item-1-info .shop-now:hover, .item-3-info .shop-now:hover, .item-4-info .shop-now:hover, .item-5-info .shop-now:hover{
+        background-color: black;
+    }
+    .item-1:hover .item-1-info, .item-3:hover .item-3-info, .item-4:hover .item-4-info, .item-5:hover .item-5-info{
+        width: 90%;
+        height: 80%;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .item-1:hover.item-1::after, .item-3:hover.item-3::after, .item-4:hover.item-4::after, .item-5:hover.item-5::after{
+        display: none;
+    }
+    .item-2-info{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 85%;
+        height: 90%;
+        z-index: 5;
+        border: 2px solid white;
+    }
+    .item-2-info::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+    }
+    .item-2-info:hover{
+        border: none;
+    }
+    .item-2-info .shop-now{
+        color: white;
+        text-decoration: none;
+        background-color: #F09D66;
+        padding: 5px;
+        position: absolute;
+        bottom: 150px;
+        left: 100px;
+        z-index: 3;
+        display: none;
+    }
+    .item-2-info .shop-now:hover{
+        background-color: black;
+    }
+    .item-2-info:hover.item-2-info::after, .item-2-info:hover img, .item-2-info:hover .shop-now{
+        display: block;
+    }
+    .photo-gallery .item-2-info img{
+        width: 50px;
+        position: absolute;
+        bottom: 200px;
+        left: 110px;
+        z-index: 2;
+        display: none;
+    }
+    .item-2-info:hover img, .item-2-info:hover {
+        display: block;
+    }
+/* 4 gallery container css end here */
+
+/* 5 summer collection container css start here */
+    #summenr-collection{
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    #summenr-collection .border-before{
+        width: 30%;
+        height: 1px;
+        top: 95px;
+        left: 10px;
+        position: absolute;
+    }
+    #summenr-collection .border-after{
+        width: 30%;
+        height: 1px;
+        top: 95px;
+        right: 10px;
+        position: absolute;
+    }
+    .summer-card{
+        position: relative;
+    }
+    .summer-card .img-2{
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+    }
+    .summer-card .yellow-offer{
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #feab12;
+        font-size: 23px;
+        line-height: 18px;
+        text-align: center;
+        font-weight: 600;
+        font-family: lato;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .summer-card .yellow-offer span{
+        font-size: 11px;
+        line-height: 18px;
+        color: #ffff;
+        font-family: lato;
+        margin-left: 2px;
+    }
+    .add-cart{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .add-cart a{
+        text-decoration: none;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    .add-cart a i{
+        font-size: 11px;
+    }
+/* 5 summer collection container css end here */
+
+/* 6 brand container css start here */
+    #brand{
+        width: 100%;
+        position: relative;
+    }
+    #brand .border-before{
+        position: absolute;
+        top: 95px;
+        left: 10px;
+        width: 30%;
+    }
+    #brand .border-after{
+        position: absolute;
+        top: 95px;
+        right: 10px;
+        width: 30%;
+    }
+/* 6 brand container css end here */
+
+
+/* 7 testimonial css start here */
+    #testimonial{
+        width: 100%;
+        min-height: 400px;    
+        background-image: url('./assets/images/testimonial-img/testimonial-bg.png');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    .testi-fluid-contai{
+        position: relative;
+    }
+    .testi-fluid-contai .border-before{
+        position: absolute;
+        top: 5px;
+        left: 100px;
+        width: 26.5%;
+    }
+    .testi-fluid-contai .border-after{
+        position: absolute;
+        top: 5px;
+        right: 100px;
+        width: 26.5%;
+    }
+    #testimonial .women p,  #testimonial .men p{
+        color: white;
+        margin-bottom: 30px;
+    }
+    #testimonial .women h3,  #testimonial .men h3{
+        font-size: 30px;
+        line-height: 18px;
+        color: #000000;
+        font-weight: 700;
+        font-style: italic;
+        font-family: playfair;
+    }
+    #testimonial .women span,  #testimonial .men span{
+        font-size: 14px;
+        line-height: 30px;
+        color: #7f7e7e;
+        font-weight: 700;
+        font-family: Lato;
+        text-align: right;
+    }
+/* 7 testimonial css end here */
+
+/* 8 footer css start here  */
+    #footer{
+        min-height: 700px;
+        background-color: #141414;
+    }
+    .footer-wrpper{
+        padding: 100px 10px;
+    }
+    #footer .shop h4, .information h4, .custmors-service h4, .stay-contected h4{
+        color: white;
+    }
+    #footer .shop ul li a, .information ul li a, .custmors-service ul li a, .stay-contected ul li a{
+        color: white;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: Lato;
+        text-decoration: none;
+    }
+    #footer .shop ul li a:hover, .information ul li a:hover, .custmors-service ul li a:hover, .tay-contected ul li a:hover{
+        color: #F09D66;
+    }
+    .stay-contected li{
+        margin-left: 10px;   
+        width: 50px;
+        height: 50px;
+    }
+    .stay-contected li a{
+        color: black;
+        padding: 10px;
+        background-color: white;
+        
+        border-radius: 25px;
+    }
+    .stay-contected li a i{
+        font-size: 18px;
+        line-height: 22px;
+        color: #141414;
+    }
+    .stay-contected form{
+        position: relative;
+    }
+    .stay-contected form input{
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid #484848;
+    }
+    .stay-contected form input::placeholder{
+        font-size: 12px;
+        line-height: 30px;
+        color: #6a6a6a;
+        font-weight: 400;
+        font-family: Lato;
+        padding-left: 10px;
+    }
+    .stay-contected form .submit{
+        position: absolute;
+        bottom: 9px;
+        right: 5px;
+        font-size: 12px;
+        line-height: 30px;
+        width: 101px;
+        height: 33px;
+        color: white;
+        background-color: #323030;
+    }
+    .copy-rights{
+        font-size: 11px;
+        line-height: 18px;
+        color: #363636;
+        font-weight: 400;
+        font-family: Lato;
+    }
+    .black-row{
+        height: 40px;
+        background-color: #000000;
+    }
+    /* scroll to up css start here */
+    .scrollUp{
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: .5s;
+        background-color: black;
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .scrollUp i{
+        font-size: 20px;
+        color: white;
+    }
+    .scrollUp.active{
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    /* scroll to up css end here */
+/* 8 footer css end here */
+
+
+/* all device media qurise start here */
+@media screen and (min-width:1281px) and (max-width:1326px) {
+    /* hero slider css start here */
+    .slide-1 .shop-now{
+        position: absolute;
+        bottom: 25%;
+        left: 46%;
+    }
+/* hero slider css end here */
+}
+
+@media screen and (max-width:1280px) {
+    /* hero slider css start here */
+    .slide-1 .shop-now{
+        position: absolute;
+        bottom: 25%;
+        left: 45%;
+    }
+/* hero slider css end here */
+/* 4 gallery container css start here */
+   .photo-gallery .item-1,  .photo-gallery .item-3, .photo-gallery .item-4, .photo-gallery .item-5{
+    width: 300px;
+}
+/* 4 gallery cotainer css end here */
+}
+
+@media screen and (max-width:1024px) {
+/* hero slider css end here */ 
+    .slide-1 .shop-now{
+        position: absolute;
+        bottom: 19%;
+        left: 45%;
+    }
+/* hero slider css end here */
+
+/* 4 gallery container css start here */
+    
+    .photo-gallery .item-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        overflow: hidden;
+        background-image: url('./assets/images/featured/banner-2.png');
+        background-size: contain;
+        background-repeat: round;
+        position: relative;
+        width: 300px;
+    }
+    .photo-gallery .item-1, .photo-gallery .item-3, .photo-gallery .item-4, .photo-gallery .item-5{
+        width: 250px;
+    }
+    .item-1:hover .item-1-info, .item-3:hover .item-3-info, .item-4:hover .item-4-info, .item-5:hover .item-5-info{
+        width: 100%;
+        height: 83%;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+/* 4 gallery css end here */
+}
+
+@media screen and (max-width:992px) {
+/* header css start here */
+    .navbar-brand{
+        font-size: 38px;
+        padding: 0px;
+    }
+    .open-nav{
+        position: absolute;
+        top: 50px;
+        right: 105px;
+    }
+/* header css end here */
+
+/* hero slider css end here */ 
+    .slide-1 .shop-now{
+        position: absolute;
+        bottom: 15%;
+        left: 44%;
+    }
+/* hero slider css end here */  
+}
+
+@media screen and (max-width:768px) {
+/* header css start here */
+    .navbar-brand{
+        font-size: 36px;
+    }
+    .open-nav{
+        position: absolute;
+        top: 50px;
+        right: 40px;
+    }
+    .overlay-content{
+        width: 100%;
+        position: relative;
+    }
+    .interal{
+        position: absolute;
+        top: 0px;
+        left: 150px;
+        text-align: left;
+    }
+    .overlay-content a{
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+        margin: 70px 0;
+        text-align: center;
+    }
+    .overlay-content a:hover{
+        color: #d9bf8f;
+    }
+    .upper-sub{
+        position: absolute;
+        top: 0px;
+        left: 500px;
+    }
+    .upper-sub li{
+        margin: 15px 0;
+    }
+    .upper-sub li a{
+        font-size: 15px;
+    }
+/* header css end here */
+
+/* 1 hero slider css start here */
+    #hero-slider .slide-1 #slide-1-info{
+    width: 200px;
+    height: 170px;
+    padding: 10px;
+    }
+    .slide-1 .shop-now{
+            position: absolute;
+            bottom: 5%;
+            left: 41%;
+            padding: 5px;
+    }
+/* 1 hero slider css end here */
+
+/* 5 summer container start here  */
+    #summenr-collection .border-before{
+        width: 20%;
+        height: 1px;
+        top: 90px;
+        left: 30px;
+        position: absolute;
+    }
+    #summenr-collection .border-after{
+        width: 20%;
+        height: 1px;
+        top: 90px;
+        right: 30px;
+        position: absolute;
+    }
+    #brand .border-before{
+        width: 20%;
+        height: 1px;
+        top: 90px;
+        left: 70px;
+        position: absolute;
+    }    
+    #brand .border-after{
+        width: 20%;
+        height: 1px;
+        top: 90px;
+        right: 70px;
+        position: absolute;
+    }
+    .testi-fluid-contai .border-before{
+        width: 20%;
+        height: 1px;
+        top: 5px;
+        left: 50px;
+        position: absolute;
+    }
+    .testi-fluid-contai .border-after{
+        width: 20%;
+        height: 1px;
+        top: 5px;
+        right: 70px;
+        position: absolute;
+    }
+/* 5 summer container end here */
+
+}
+
+@media screen and (max-width:576px) {
+/* 1 header css start here */
+    .navbar-brand{
+        font-size: 36px;
+    }
+    .open-nav{
+        position: absolute;
+        top: 10px;
+        right:15px;
+    }
+/* 1 header css end here */
+
+/* 2 slider css start here */
+    #hero-slider .slide-1 #slide-1-info p{
+        font-size: 14px;
+    }
+    #hero-slider .slide-1 #slide-1-info h4{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }    
+    .slide-1 .shop-now{
+        height: 25px;
+        line-height: 15px;
+        position: absolute;
+        bottom: 15%;
+        left: 40%;
+    }
+/* 2 slider css end here */
+
+/* 3 feature section css start here */
+    .fa-plane{
+        font-size: 28px;
+        margin-left: -45px;
+    }
+    .fa-life-ring{
+        font-size: 28px;
+        margin-left: -60px;
+    }
+    .fa-phone-alt{
+        font-size: 28px;
+    }
+    .fa-clock{
+        font-size: 28px;
+        margin-left: -40px;
+    }
+
+/* 3 feature section css start here */
+
+/* 4  */
+}
+
+@media screen and (max-width:420px) {
+/* header css start here */
+    .open-nav{
+        position: absolute;
+        top: 10px;
+        right:5px;
+    }
+/* header css end here */
+/* hero slider css start here */
+    #hero-slider .slide-1 #slide-1-info p{
+        font-size: 14px;
+    }
+    #hero-slider .slide-1 #slide-1-info h4{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }  
+    .slide-1 .shop-now{
+        height: 25px;
+        line-height: 15px;
+        position: absolute;
+        bottom: 15%;
+        left: 40%;
+    }
+/* hero slider css end here */
+}
+
+@media screen and (max-width:320px) {
+/* header css start here */
+    .open-nav{
+        position: absolute;
+        top: 10px;
+        right:5px;
+    }
+    .overlay {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 0%;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .overlay-content a{
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+        margin: 0 100px;
+        text-align: center;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 60px;
+        color: tomato;
+    }
+    .fa-times{
+        font-size: 32px;
+    }
+    .interal{
+        position: absolute;
+        top: -70px;
+        left: -50px;
+        text-align: left;
+    }
+    .upper-sub{
+        width: 500px;
+        position: absolute;
+        top: 180px;
+        left: -45px;
+    }
+    .upper-sub li{
+        margin: 5px 0;
+    }
+    .upper-sub li a{
+        font-size: 15px;
+    }
+/* header css end here */
+/* 2 slider container css start here */
+    .slide-1 .shop-now{
+        position: absolute;
+        bottom: 30%;
+        left: 35%;
+    }
+/* 2 slider container css end here */
+
+    .section-h2{
+        font-size: 20px;
+    }
+    .border-after, .border-before{
+        display: none;
+    }
+
+    /* 8 footer container css start here */
+    .footer-wrpper{
+        padding: 10px 10px;
+    }
+    /* 8 footer container css start here */
+}
+/* all device media qurise end here */
